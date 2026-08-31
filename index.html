@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PoupaLuz — Compara fornecedores de energia e poupa até 300€/ano</title>
+<link rel="stylesheet" href="/css/style.css" >
+<script src="/js/script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo"><span class="dot"></span> PoupaLuz</div>
+    <nav class="nav-links">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#comparacao">Comparação</a>
+      <a href="#testemunhos">Testemunhos</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#lead-form" class="header-cta">Pedir simulação</a>
+  </div>
+</header>
+<main>
+
+</main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">● +20 comercializadoras comparadas</span>
+      <h1>Encontra o fornecedor de energia <span>mais barato</span> para a tua casa</h1>
+      <p class="lead">Compara eletricidade e gás natural em segundos. Preenche o formulário, recebe propostas personalizadas e poupa até <strong>300€ por ano</strong> — sem custos, sem compromisso.</p>
+      <div class="hero-stats">
+        <div class="stat"><div class="num"><em>300€</em></div><div class="label">poupança média anual</div></div>
+        <div class="stat"><div class="num">20+</div><div class="label">fornecedores comparados</div></div>
+        <div class="stat"><div class="num">100k+</div><div class="label">famílias já apoiadas</div></div>
+      </div>
+    </div>
+
+    <div class="form-card" id="lead-form">
+      <div class="form-head">
+        <svg class="gauge" viewBox="0 0 64 64" id="gaugeSvg">
+          <path d="M8 50 A24 24 0 1 1 56 50" fill="none" stroke="#DCE6E3" stroke-width="6" stroke-linecap="round"/>
+          <path id="gaugeArc" d="M8 50 A24 24 0 1 1 56 50" fill="none" stroke="#00C9A7" stroke-width="6" stroke-linecap="round" stroke-dasharray="113" stroke-dashoffset="113"/>
+          <circle cx="32" cy="50" r="3" fill="#0F2A3D"/>
+          <line id="gaugeNeedle" x1="32" y1="50" x2="32" y2="28" stroke="#0F2A3D" stroke-width="2.5" stroke-linecap="round" transform="rotate(-90 32 50)"/>
+        </svg>
+        <div>
+          <h2>Pede a tua simulação</h2>
+          <p>Demora menos de 1 minuto</p>
+        </div>
+      </div>
+
+      <div class="progress-track">
+        <i class="active" data-step="1"></i>
+        <i data-step="2"></i>
+        <i data-step="3"></i>
+        <i data-step="4"></i>
+      </div>
+
+      <form id="leadForm" novalidate>
+
+        <!-- STEP 1 -->
+        <div class="step active" data-step="1">
+          <span class="step-label">Passo 1 de 4</span>
+          <h3>Que tipo de energia procuras?</h3>
+          <div class="option-grid three" data-group="tipo_energia">
+            <div class="option-card" data-value="Eletricidade + Gás">⚡🔥<span class="icon"></span>Luz + Gás</div>
+            <div class="option-card" data-value="Eletricidade">⚡<span class="icon"></span>Eletricidade</div>
+            <div class="option-card" data-value="Gás Natural">🔥<span class="icon"></span>Gás Natural</div>
+          </div>
+          <div class="step-nav" style="justify-content:flex-end; margin-top:24px;">
+            <button type="button" class="btn btn-primary" data-next>Continuar →</button>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="step" data-step="2">
+          <span class="step-label">Passo 2 de 4</span>
+          <h3>Como é o teu consumo?</h3>
+          <div class="field">
+            <label for="potencia">Potência contratada</label>
+            <select id="potencia">
+              <option value="">Seleciona a potência</option>
+              <option>1.15 kVA</option>
+              <option>2.3 kVA</option>
+              <option>3.45 kVA</option>
+              <option selected>6.9 kVA</option>
+              <option>10.35 kVA</option>
+              <option>Não sei</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fornecedor">Fornecedor atual</label>
+            <select id="fornecedor">
+              <option value="">Seleciona o fornecedor</option>
+              <option>EDP</option>
+              <option>Galp</option>
+              <option>Endesa</option>
+              <option>Iberdrola</option>
+              <option>Goldenergy</option>
+              <option>Repsol</option>
+              <option>Outro / Não sei</option>
+            </select>
+          </div>
+          <div class="step-nav">
+            <button type="button" class="btn btn-ghost" data-prev>← Voltar</button>
+            <button type="button" class="btn btn-primary" data-next>Continuar →</button>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="step" data-step="3">
+          <span class="step-label">Passo 3 de 4</span>
+          <h3>Os teus dados de contacto</h3>
+          <div class="field-row">
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="O teu nome" required>
+            </div>
+            <div class="field">
+              <label for="telefone">Telemóvel</label>
+              <input type="tel" id="telefone" placeholder="9XX XXX XXX" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="nome@email.com" required>
+          </div>
+          <div class="field">
+            <label for="cp">Código Postal</label>
+            <input type="text" id="cp" placeholder="0000-000">
+          </div>
+          <div class="step-nav">
+            <button type="button" class="btn btn-ghost" data-prev>← Voltar</button>
+            <button type="button" class="btn btn-primary" data-next>Continuar →</button>
+          </div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="step" data-step="4">
+          <span class="step-label">Passo 4 de 4</span>
+          <h3>Confirma e envia</h3>
+          <p style="font-size:0.88rem; color:var(--ink-soft); margin-bottom:16px;">Resumo do teu pedido: <strong id="resumoTexto" style="color:var(--navy);"></strong></p>
+          <div class="checkbox-row">
+            <input type="checkbox" id="termos" required>
+            <label for="termos">Aceito os <a href="#">Termos e Condições</a> e a <a href="#">Política de Privacidade</a>, e autorizo o contacto por um especialista PoupaLuz.</label>
+          </div>
+          <div class="step-nav">
+            <button type="button" class="btn btn-ghost" data-prev>← Voltar</button>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn" disabled>Receber a minha simulação</button>
+          </div>
+        </div>
+
+      </form>
+
+      <div class="success-box" id="successBox">
+        <div class="check">✓</div>
+        <h3>Pedido recebido!</h3>
+        <p>Um dos nossos especialistas vai contactar-te em breve com a melhor proposta para a tua casa.</p>
+      </div>
+
+      <div class="trust-row">
+        <span class="tick">✓</span> Serviço 100% gratuito e sem compromisso
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="logos-section">
+  <div class="wrap">
+    <p>Comparamos propostas de mais de 20 comercializadoras</p>
+    <div class="logos-row">
+      <span>EDP</span><span>Galp</span><span>Endesa</span><span>Iberdrola</span><span>Goldenergy</span><span>Repsol</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="como-funciona">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow-lite">Como funciona</span>
+      <h2>Três passos até à fatura mais baixa</h2>
+      <p>Sem letras pequenas, sem burocracia. Tratamos da mudança de fornecedor por ti.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <h3>Diz-nos o que procuras</h3>
+        <p>Preenche o formulário com a tua potência e consumo habitual. Demora menos de um minuto.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <h3>Comparamos por ti</h3>
+        <p>Cruzamos as propostas de mais de 20 fornecedores e identificamos as melhores condições para o teu perfil.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <h3>Escolhes e poupas</h3>
+        <p>Um especialista contacta-te com a proposta certa. Tratamos da mudança de fornecedor sem qualquer custo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="table-section" id="comparacao">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow-lite">Comparação ao vivo</span>
+      <h2>Quanto podes poupar este mês</h2>
+      <p>Valores de referência com base num consumo médio de 400 kWh/mês de eletricidade.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>Fornecedor</th><th>Termo fixo</th><th>Preço kWh</th><th>Custo mensal est.</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>EDP</td><td>0.578€/dia</td><td>0.142€/kWh</td><td class="tag">128.36€</td></tr>
+          <tr><td>Endesa</td><td>0.704€/dia</td><td>0.136€/kWh</td><td class="tag">128.84€</td></tr>
+          <tr><td>Repsol</td><td>0.564€/dia</td><td>0.148€/kWh</td><td class="tag">133.25€</td></tr>
+          <tr><td>Goldenergy</td><td>0.620€/dia</td><td>0.140€/kWh</td><td class="tag">134.42€</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">Fonte: ERSE. Valores indicativos, sujeitos a atualização e ao perfil de consumo real.</p>
+  </div>
+</section>
+
+<section class="section" id="testemunhos">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow-lite">Testemunhos</span>
+      <h2>O que dizem as famílias que já pouparam</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Pedi ajuda para mudar de fornecedor e fiquei a poupar bastante por mês. Não tive de me preocupar com nada."</p>
+        <div class="testi-name">Mónica N.</div>
+        <div class="testi-source">Google</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Fomos atendidos rapidamente, com eficácia, e todas as nossas dúvidas foram esclarecidas."</p>
+        <div class="testi-name">Maria C.</div>
+        <div class="testi-source">Trustpilot</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Ajudaram-me a encontrar a melhor empresa de eletricidade e gás, com muita competência e paciência."</p>
+        <div class="testi-name">Joaquim P.</div>
+        <div class="testi-source">Email</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow-lite">Perguntas frequentes</span>
+      <h2>Tudo o que precisas de saber</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q">É mesmo gratuito? <span class="plus">+</span></button>
+        <div class="faq-a">Sim. O nosso serviço de comparação e mudança de fornecedor é totalmente gratuito e sem compromisso de adesão.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Quanto tempo demora a mudança de fornecedor? <span class="plus">+</span></button>
+        <div class="faq-a">A mudança é gratuita e demora, em média, 5 dias úteis, sem interrupção no fornecimento.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Que documentos preciso? <span class="plus">+</span></button>
+        <div class="faq-a">Precisas do NIF do titular, comprovativo de morada, código CPE/CUI e IBAN, caso optes por débito direto.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Os meus dados estão seguros? <span class="plus">+</span></button>
+        <div class="faq-a">Sim. Tratamos os teus dados de acordo com a nossa Política de Privacidade e nunca os partilhamos sem o teu consentimento.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="final-cta">
+      <h2>Pronto para baixar a tua fatura de energia?</h2>
+      <p>Leva menos de 1 minuto a preencher. Sem compromisso.</p>
+      <a href="#lead-form" class="btn btn-primary">Pedir a minha simulação →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">PoupaLuz</div>
+        <p style="max-width:280px; font-size:0.85rem;">Comparamos fornecedores de eletricidade e gás natural em Portugal para te ajudar a poupar todos os meses.</p>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#">Eletricidade</a></li>
+          <li><a href="#">Gás Natural</a></li>
+          <li><a href="#">Painéis Solares</a></li>
+          <li><a href="#">Mobilidade Elétrica</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="#">Quem somos</a></li>
+          <li><a href="#">Contactos</a></li>
+          <li><a href="#">Carreiras</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Termos & Condições</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Livro de Reclamações</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PoupaLuz. Todos os direitos reservados.</span>
+      <span>Precisas de ajuda? 211 165 765 — Seg-Sex 10h-19h</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
