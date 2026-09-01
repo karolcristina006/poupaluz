@@ -3,37 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PoupaLuz — Compara fornecedores de energia e poupa até 300€/ano</title>
+<title>ComparaLuz — Compara fornecedores de energia e poupa até 300€/ano</title>
 <meta name="description" content="Compara mais de 20 fornecedores de eletricidade e gás natural em Portugal e poupa até 300€ por ano. Simulação grátis em 1 minuto, sem compromisso.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.poupaluz.pt/">
-<link rel="alternate" hreflang="pt-PT" href="https://www.poupaluz.pt/">
-<link rel="alternate" hreflang="x-default" href="https://www.poupaluz.pt/">
+<link rel="canonical" href="https://www.comparaluz.pt/">
+<link rel="alternate" hreflang="pt-PT" href="https://www.comparaluz.pt/">
+<link rel="alternate" hreflang="x-default" href="https://www.comparaluz.pt/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="PoupaLuz">
-<meta property="og:title" content="PoupaLuz — Compara fornecedores de energia e poupa até 300€/ano">
+<meta property="og:site_name" content="ComparaLuz">
+<meta property="og:title" content="ComparaLuz — Compara fornecedores de energia e poupa até 300€/ano">
 <meta property="og:description" content="Compara mais de 20 fornecedores de eletricidade e gás natural em Portugal e poupa até 300€ por ano. Simulação grátis em 1 minuto, sem compromisso.">
-<meta property="og:url" content="https://www.poupaluz.pt/">
+<meta property="og:url" content="https://www.comparaluz.pt/">
 <meta property="og:locale" content="pt_PT">
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="PoupaLuz — Compara fornecedores de energia e poupa até 300€/ano">
+<meta name="twitter:title" content="ComparaLuz — Compara fornecedores de energia e poupa até 300€/ano">
 <meta name="twitter:description" content="Compara mais de 20 fornecedores de eletricidade e gás natural em Portugal e poupa até 300€ por ano.">
 
-<link rel="stylesheet" href="/css/style.css" >
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="/css/style.css">
 <script src="/js/script.js" defer></script>
+<meta name="theme-color" content="#0F2A3D">
 
 <!-- Structured data: Organization -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "PoupaLuz",
-  "url": "https://www.poupaluz.pt/",
-  "logo": "https://www.poupaluz.pt/imagens/logo.png",
+  "name": "ComparaLuz",
+  "url": "https://www.comparaluz.pt/",
+  "logo": "https://www.comparaluz.pt/imagens/logo.png",
   "description": "Comparador de fornecedores de eletricidade e gás natural em Portugal.",
   "areaServed": {"@type": "Country", "name": "Portugal"},
   "contactPoint": {
@@ -82,8 +86,8 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "PoupaLuz",
-  "url": "https://www.poupaluz.pt/",
+  "name": "ComparaLuz",
+  "url": "https://www.comparaluz.pt/",
   "inLanguage": "pt-PT"
 }
 </script>
@@ -93,21 +97,20 @@
 
 <header>
   <div class="header-inner">
-    <div class="logo"><span class="dot"></span> PoupaLuz</div>
-    <nav class="nav-links">
+    <a href="/" class="logo"><span class="dot"></span> ComparaLuz</a>
+    <nav class="nav-links" id="navLinks">
       <a href="#como-funciona">Como funciona</a>
-      <a href="paginas/Servicos.html">Serviços</a>
+      <a href="/paginas/Servicos.html">Serviços</a>
       <a href="#comparacao">Comparação</a>
       <a href="#testemunhos">Testemunhos</a>
-      <a href="paginas/aboutme.html">Quem somos</a>
+      <a href="/paginas/aboutme.html">Quem somos</a>
       <a href="#faq">FAQ</a>
     </nav>
     <a href="#lead-form" class="header-cta">Pedir simulação</a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">☰</button>
   </div>
 </header>
 <main>
-
-</main>
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
@@ -228,7 +231,7 @@
           <p style="font-size:0.88rem; color:var(--ink-soft); margin-bottom:16px;">Resumo do teu pedido: <strong id="resumoTexto" style="color:var(--navy);"></strong></p>
           <div class="checkbox-row">
             <input type="checkbox" id="termos" required>
-            <label for="termos">Aceito os <a href="#">Termos e Condições</a> e a <a href="#">Política de Privacidade</a>, e autorizo o contacto por um especialista PoupaLuz.</label>
+            <label for="termos">Aceito os <a href="#">Termos e Condições</a> e a <a href="#">Política de Privacidade</a>, e autorizo o contacto por um especialista ComparaLuz.</label>
           </div>
           <div class="step-nav">
             <button type="button" class="btn btn-ghost" data-prev>← Voltar</button>
@@ -385,28 +388,30 @@
   </div>
 </section>
 
+</main>
+
 <footer>
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="footer-logo">PoupaLuz</div>
+        <div class="footer-logo">ComparaLuz</div>
         <p style="max-width:280px; font-size:0.85rem;">Comparamos fornecedores de eletricidade e gás natural em Portugal para te ajudar a poupar todos os meses.</p>
       </div>
       <div>
         <h4>Serviços</h4>
         <ul>
-          <li><a href="paginas/Servicos.html">Eletricidade</a></li>
-          <li><a href="paginas/Servicos.html">Gás Natural</a></li>
-          <li><a href="paginas/Servicos.html">Painéis Solares</a></li>
-          <li><a href="paginas/Servicos.html">Mobilidade Elétrica</a></li>
+          <li><a href="/paginas/Servicos.html">Eletricidade</a></li>
+          <li><a href="/paginas/Servicos.html">Gás Natural</a></li>
+          <li><a href="/paginas/Servicos.html">Painéis Solares</a></li>
+          <li><a href="/paginas/Servicos.html">Mobilidade Elétrica</a></li>
         </ul>
       </div>
       <div>
         <h4>Sobre</h4>
         <ul>
-          <li><a href="paginas/aboutme.html">Quem somos</a></li>
-          <li><a href="paginas/aboutme.html">Contactos</a></li>
-          <li><a href="paginas/aboutme.html">Carreiras</a></li>
+          <li><a href="/paginas/aboutme.html">Quem somos</a></li>
+          <li><a href="/paginas/aboutme.html">Contactos</a></li>
+          <li><a href="/paginas/aboutme.html">Carreiras</a></li>
         </ul>
       </div>
       <div>
@@ -419,7 +424,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 PoupaLuz. Todos os direitos reservados.</span>
+      <span>© 2024 ComparaLuz. Todos os direitos reservados.</span>
       <span>Precisas de ajuda? 211 165 765 — Seg-Sex 10h-19h</span>
     </div>
   </div>
