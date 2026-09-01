@@ -3,20 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> — Compara lUZ fornecedores de energia e poupa até 300€/ano</title>
+<title>PoupaLuz — Compara fornecedores de energia e poupa até 300€/ano</title>
+<meta name="description" content="Compara mais de 20 fornecedores de eletricidade e gás natural em Portugal e poupa até 300€ por ano. Simulação grátis em 1 minuto, sem compromisso.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.poupaluz.pt/">
+<link rel="alternate" hreflang="pt-PT" href="https://www.poupaluz.pt/">
+<link rel="alternate" hreflang="x-default" href="https://www.poupaluz.pt/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PoupaLuz">
+<meta property="og:title" content="PoupaLuz — Compara fornecedores de energia e poupa até 300€/ano">
+<meta property="og:description" content="Compara mais de 20 fornecedores de eletricidade e gás natural em Portugal e poupa até 300€ por ano. Simulação grátis em 1 minuto, sem compromisso.">
+<meta property="og:url" content="https://www.poupaluz.pt/">
+<meta property="og:locale" content="pt_PT">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PoupaLuz — Compara fornecedores de energia e poupa até 300€/ano">
+<meta name="twitter:description" content="Compara mais de 20 fornecedores de eletricidade e gás natural em Portugal e poupa até 300€ por ano.">
+
 <link rel="stylesheet" href="/css/style.css" >
 <script src="/js/script.js" defer></script>
+
+<!-- Structured data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PoupaLuz",
+  "url": "https://www.poupaluz.pt/",
+  "logo": "https://www.poupaluz.pt/imagens/logo.png",
+  "description": "Comparador de fornecedores de eletricidade e gás natural em Portugal.",
+  "areaServed": {"@type": "Country", "name": "Portugal"},
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+351-211-165-765",
+    "contactType": "customer service",
+    "availableLanguage": "Portuguese",
+    "hoursAvailable": "Mo-Fr 10:00-19:00"
+  },
+  "sameAs": []
+}
+</script>
+
+<!-- Structured data: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "É mesmo gratuito?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Sim. O nosso serviço de comparação e mudança de fornecedor é totalmente gratuito e sem compromisso de adesão."}
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto tempo demora a mudança de fornecedor?",
+      "acceptedAnswer": {"@type": "Answer", "text": "A mudança é gratuita e demora, em média, 5 dias úteis, sem interrupção no fornecimento."}
+    },
+    {
+      "@type": "Question",
+      "name": "Que documentos preciso?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Precisas do NIF do titular, comprovativo de morada, código CPE/CUI e IBAN, caso optes por débito direto."}
+    },
+    {
+      "@type": "Question",
+      "name": "Os meus dados estão seguros?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Sim. Tratamos os teus dados de acordo com a nossa Política de Privacidade e nunca os partilhamos sem o teu consentimento."}
+    }
+  ]
+}
+</script>
+
+<!-- Structured data: WebSite + SearchAction -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "PoupaLuz",
+  "url": "https://www.poupaluz.pt/",
+  "inLanguage": "pt-PT"
+}
+</script>
 </head>
 
 <body>
 
 <header>
   <div class="header-inner">
-    <div class="logo"><span class="dot"></span> ComparaLuz</div>
+    <div class="logo"><span class="dot"></span> PoupaLuz</div>
     <nav class="nav-links">
       <a href="#como-funciona">Como funciona</a>
+      <a href="paginas/Servicos.html">Serviços</a>
       <a href="#comparacao">Comparação</a>
       <a href="#testemunhos">Testemunhos</a>
+      <a href="paginas/aboutme.html">Quem somos</a>
       <a href="#faq">FAQ</a>
     </nav>
     <a href="#lead-form" class="header-cta">Pedir simulação</a>
@@ -30,7 +113,7 @@
     <div>
       <span class="eyebrow">● +20 comercializadoras comparadas</span>
       <h1>Encontra o fornecedor de energia <span>mais barato</span> para a tua casa</h1>
-      <p class="lead">Está a pagar demasiado pela energia? Entre na Compara Luz e descubra se existe uma tarifa mais vantajosa para si.</p>
+      <p class="lead">Compara eletricidade e gás natural em segundos. Preenche o formulário, recebe propostas personalizadas e poupa até <strong>300€ por ano</strong> — sem custos, sem compromisso.</p>
       <div class="hero-stats">
         <div class="stat"><div class="num"><em>300€</em></div><div class="label">poupança média anual</div></div>
         <div class="stat"><div class="num">20+</div><div class="label">fornecedores comparados</div></div>
@@ -280,6 +363,14 @@
         <button class="faq-q">Os meus dados estão seguros? <span class="plus">+</span></button>
         <div class="faq-a">Sim. Tratamos os teus dados de acordo com a nossa Política de Privacidade e nunca os partilhamos sem o teu consentimento.</div>
       </div>
+      <div class="faq-item">
+        <button class="faq-q">Posso mudar de fornecedor se tiver dívidas? <span class="plus">+</span></button>
+        <div class="faq-a">Sim. Dívidas com o fornecedor atual não impedem a mudança — o contrato novo pode ser feito em paralelo e as dívidas são resolvidas à parte.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Há fidelização ou multas de saída? <span class="plus">+</span></button>
+        <div class="faq-a">Depende do contrato atual. A maioria dos contratos de índice regulado não tem fidelização; indicamos sempre eventuais custos de saída antes de avançar.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -304,18 +395,18 @@
       <div>
         <h4>Serviços</h4>
         <ul>
-          <li><a href="#">Eletricidade</a></li>
-          <li><a href="#">Gás Natural</a></li>
-          <li><a href="#">Painéis Solares</a></li>
-          <li><a href="#">Mobilidade Elétrica</a></li>
+          <li><a href="paginas/Servicos.html">Eletricidade</a></li>
+          <li><a href="paginas/Servicos.html">Gás Natural</a></li>
+          <li><a href="paginas/Servicos.html">Painéis Solares</a></li>
+          <li><a href="paginas/Servicos.html">Mobilidade Elétrica</a></li>
         </ul>
       </div>
       <div>
         <h4>Sobre</h4>
         <ul>
-          <li><a href="#">Quem somos</a></li>
-          <li><a href="#">Contactos</a></li>
-          <li><a href="#">Carreiras</a></li>
+          <li><a href="paginas/aboutme.html">Quem somos</a></li>
+          <li><a href="paginas/aboutme.html">Contactos</a></li>
+          <li><a href="paginas/aboutme.html">Carreiras</a></li>
         </ul>
       </div>
       <div>
@@ -328,7 +419,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 ComaparaLuz. Todos os direitos reservados.</span>
+      <span>© 2026 PoupaLuz. Todos os direitos reservados.</span>
       <span>Precisas de ajuda? 211 165 765 — Seg-Sex 10h-19h</span>
     </div>
   </div>
