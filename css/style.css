@@ -1,4 +1,4 @@
-  :root{
+:root{
     --navy:#0F2A3D;
     --navy-2:#143447;
     --teal:#00C9A7;
@@ -42,24 +42,43 @@
   .header-inner{
     display:flex; align-items:center; justify-content:space-between;
     padding:16px 24px; max-width:1180px; margin:0 auto;
+    position:relative;
+  }
+
+  /* Agrupador do Logo + Slogan */
+  .logo-container{
+    display:flex; flex-direction:column; align-items:flex-start;
   }
   .logo{
     font-family:var(--font-display); font-weight:700; font-size:1.3rem;
     display:flex; align-items:center; gap:8px; color:var(--navy);
   }
   .logo .dot{width:10px; height:10px; border-radius:50%; background:var(--amber); box-shadow:0 0 0 4px rgba(255,182,39,0.25);}
-  .nav-links{display:flex; gap:32px; font-size:0.95rem; font-weight:500; color:var(--ink-soft);}
+  
+  /* Estilização do Slogan */
+  .logo-tagline{
+    font-size:0.7rem; font-weight:600; color:var(--ink-soft);
+    letter-spacing:0.02em; margin-top:2px; line-height:1.1;
+  }
+
+  /* Agrupador da navegação e botão no canto direito */
+  .header-right{
+    display:flex; align-items:center; gap:24px; margin-left:auto;
+  }
+  .nav-links{display:flex; gap:24px; font-size:0.95rem; font-weight:500; color:var(--ink-soft);}
   .nav-links a:hover{color:var(--navy);}
+  
   .header-cta{
     background:var(--navy); color:white; padding:10px 22px;
     border-radius:999px; font-weight:600; font-size:0.9rem;
-    transition:background .2s ease;
+    transition:background .2s ease; white-space:nowrap;
   }
   .header-cta:hover{background:var(--teal-dark);}
   .nav-toggle{display:none; background:none; font-size:1.5rem; color:var(--navy); padding:4px 8px; line-height:1;}
 
   @media (max-width:860px){
     .nav-toggle{display:block;}
+    .header-right{margin-left:0; gap:12px;}
     .nav-links{
       display:none;
       position:absolute; top:100%; left:0; right:0;
@@ -74,7 +93,6 @@
   @media (max-width:480px){
     .header-cta{padding:9px 14px; font-size:0.82rem;}
   }
-  .header-inner{position:relative;}
 
   /* ===== Hero ===== */
   .hero{
